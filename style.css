@@ -1,0 +1,72 @@
+body{
+  background-color: #00CC6A;
+  font-family: 'Josefin Sans';
+}
+
+
+.container{
+  background-color: #847545;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 56%;
+  margin: auto;
+  text-align: center;
+
+
+}
+
+.container-content{
+  background-color: #ecf0f1;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+.step{
+    background-color: #10893E;
+    padding: 3rem;
+    color: white;
+    border-radius: 5px;
+    margin: 1rem auto;
+    text-align: center;
+    width: 70%;
+}
+
+.article-card{
+  background-color: #847545;
+  padding: 1rem 2rem;
+  width: 50%;
+  margin: 1rem auto;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.article-card img{
+  height: 5rem;
+}
+
+.article-card-content {
+  padding: 1rem 3rem;
+  text-align: left;
+}
+
+.summary-content{
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 1rem;
+  width: 40%;
+  margin: 1rem auto;
+  border-radius: 5px;
+}
+#payBtn{
+  background:inherit;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  background-color: #FFB900;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CuevaDeTarzan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+        <div class="container">
+
+              <div class="container-content">
+
+                        <h1>Cueva de Tarzan</h1>
+                        <p>Bienvenido a nuesta pagina online de ordernar!</p>
+
+
+                          <!-- Step 1 -->
+                          <div class="step">
+                              <h2>Step 1: Escoja el cafe</h2>
+                                <div class="article-card" onclick="select('Latte',lattePrice)">
+                                    <h3>Latte $<span id="latte"></span></h3>
+                                </div>
+                                <div class="article-card" onclick="select('Espresso',espressoPrice)">
+                                    <h3>Espresso $<span id="espresso"></span></h3>
+                                </div>
+                                <div class="article-card" onclick="select('Mochaccino',mochaPrice)">
+                                    <h3>Mochaccino $<span id="mochaccino"></span></h3>
+                                </div>
+                                <div class="article-card" onclick="select('Capuccino',capuccinoPrice)">
+                                    <h3>Cappuccino $<span id="cappuccino"></span></h3>
+                                </div>
+
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step">
+                            <h2>Step 2: Escoja el tamaño</h2>
+                              <div class="article-card" onclick="select('Pequeño',smallCupPrice)">
+                                  <img src="images/cup.jpg">
+                                  <div class="article-card-content">
+                                      <h3>Pequeño 8 oz.</h3>
+                                        <p>Precio: $<span id="smallcup"></span></p>
+                                  </div>
+                              </div>
+                              <div class="article-card" onclick="select('Mediano',mediumCupPrice)">
+                                <img src="images/cup.jpg">
+                                <div class="article-card-content">
+                                    <h3>Mediano 12 oz.</h3>
+                                      <p>Precio: $<span id="mediano"></span></p>
+                                </div>
+                              </div>
+                              <div class="article-card" onclick="select('Grande',largeCupPrice)">
+                                <img src="images/cup.jpg">
+                                <div class="article-card-content">
+                                    <h3>Grande 16 oz.</h3>
+                                      <p>Precio: $<span id="grande"></span></p>
+                                </div>
+                              </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step">
+                            <h2>Step 3: Escoja la leche</h2>
+                              <div class="article-card" onclick="select('Wholemilk',wholemilkPrice)">
+                                  <img src="images/wholemilk.png">
+                                  <div class="article-card-content">
+                                      <h3>Wholemilk</h3>
+                                        <p>Precio: $<span id="wholemilk"></span></p>
+                                  </div>
+                              </div>
+                              <div class="article-card" onclick="select('LactoseFree',lactosefreePrice)">
+                                <img src="images/lactose-free.jpeg">
+                                <div class="article-card-content">
+                                    <h3>Lactose Free</h3>
+                                      <p>Precio: $<span id="lactosefree"></span></p>
+                                </div>
+                              </div>
+                              <div class="article-card" onclick="select('AlmondMilk',almondmilkPrice)">
+                                <img src="images/almond-milk.jpg">
+                                <div class="article-card-content">
+                                    <h3>Almond Milk</h3>
+                                      <p>Precio: $<span id="almondmilk"></span></p>
+                                </div>
+                              </div>
+                              <div class="article-card" onclick="select('Oatmilk',oatmilkPrice)">
+                                <img src="images/oatmilk.png">
+                                <div class="article-card-content">
+                                    <h3>Oat Milk</h3>
+                                      <p>Precio: $<span id="oatmilk"></span></p>
+                                </div>
+                              </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step">
+                            <h2>Step 4: Escoje Whip Cream</h2>
+                              <div class="article-card" onclick="select('NoWhipCream',nowhipcreamPrice)">
+                                  <img src="images/none.png">
+                                  <div class="article-card-content">
+                                      <h3>No Whip Cream</h3>
+                                        <p>Precio: $<span id="none"></span></p>
+                                  </div>
+                              </div>
+                              <div class="article-card" onclick="select('WhipCream',whipcreamPrice)">
+                                <img src="images/whip-cream.jpeg">
+                                <div class="article-card-content">
+                                    <h3>Whip Cream</h3>
+                                      <p>Precio: $<span id="whipcream"></span></p>
+                                </div>
+                              </div>
+                              <div class="article-card">
+                                <img src="images/choco-whip-cream.jpg" onclick="select('ChocoWhipCream',chocowhipcreamPrice)">
+                                <div class="article-card-content">
+                                    <h3>Choco Whip Cream</h3>
+                                      <p>Precio: $<span id="chocowhipcream"></span></p>
+                                </div>
+                              </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="step">
+                            <h2>Step 5: Pagar el cafe</h2>
+                              <h3>Summary</h3>
+                                <div class="summary-content">
+                                      <ul>
+
+                                    </ul>
+                                    <p>Subtotal: $<span id="subtotal"></span></p>
+                                      <p>Online Fee: $<span id="online-fee"></span></p>
+                                        <p>Tax: $<span id="tax"></span></p>
+                                          <p>Total: $<span id="total"></span></p>
+                                </div>
+                                <button type="button" name="button" id="payBtn"> Pagar</button>
+                              </div>
+
+                      </div>
+
+
+
+              </div>
+
+                <script src ="script.js"></script>
+  </body>
+</html>
